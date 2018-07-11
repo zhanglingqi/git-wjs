@@ -1,0 +1,500 @@
+@font-face {
+	font-family: 'wjs';
+	src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'), 
+	url('../fonts/MiFie-Web-Font.svg') format('svg'), 
+	url('../fonts/MiFie-Web-Font.ttf') format('truetype'), 
+	url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+
+.wjs_icon {
+	font-family: 'wjs';
+}
+
+.wjs_icon_phone::before{
+    content: "\e908";
+}
+.wjs_icon_tel::before{
+    content: "\e909";
+}
+.wjs_icon_logo::before{
+    content: "\e920";
+}
+.wjs_icon_word::before{
+    content: "\e93e";
+}
+.wjs_icon_E903::before{
+    content: "\e903";
+}
+.wjs_icon_E906::before{
+    content: "\e906";
+}
+.wjs_icon_E905::before{
+    content: "\e905";
+}
+.wjs_icon_E907::before{
+    content: "\e907";
+}
+.wjs_icon_E901::before{
+    content: "\e901";
+}
+.wjs_icon_E900::before{
+    content: "\e900";
+}
+.wjs_icon_E904::before{
+    content: "\e904";
+}
+.wjs_icon_E902::before{
+    content: "\e902";
+}
+.wjs_icon_E906::before{
+    content: "\e906";
+}
+.wjs_icon_new01::before{
+    content: "\e90e";
+}
+.wjs_icon_new02::before{
+    content: "\e90f";
+}
+.wjs_icon_new03::before{
+    content: "\e910";
+}
+.wjs_icon_new04::before{
+    content: "\e911";
+}
+.wjs_icon_partner01::before{
+    content:"\e946";
+}
+.wjs_icon_partner02::before{
+    content: "\e92f";
+}
+.wjs_icon_partner03::before{
+    content: "\e92e";
+}
+.wjs_icon_partner04::before{
+    content: "\e92a";
+}
+.wjs_icon_partner05::before{
+    content: "\e929";
+}
+.wjs_icon_partner06::before{
+    content: "\e931";
+}
+.wjs_icon_partner07::before{
+    content: "\e92c";
+}
+.wjs_icon_partner08::before{
+    content: "\e92b";
+}
+.wjs_icon_partner09::before{
+    content: "\e92d";
+}
+a {
+	color: #333;
+}
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+.topBar {
+	border-bottom: 1px solid #ccc;
+}
+
+.topBar .items {
+	height: 40px;
+	line-height: 40px;
+	border-right: 1px solid #ccc;
+	text-align: center;
+	font-size: 12px;
+}
+
+.topBar .items:last-child {
+	border-right: none;
+}
+
+.topBar .word {
+	padding: 0 3px;
+}
+.topBar .mobile {
+	width: 100%;
+	height: 40px;
+	position: relative;
+	cursor: pointer;
+}
+.topBar .code {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);;
+	top: 40px;
+	border: 1px solid #ccc;
+	border-top: none;
+	display: none;
+	z-index: :;;
+}
+.topBar .mobile:hover .code {
+	display: block;
+}
+.topBar .links {
+	margin: 0 3px;
+}
+.topBar .btn-register {
+	padding: 3px 15px;
+	background: #e92322;
+}
+.wjs-navBar {
+	background: #fff;
+	margin-bottom: 0;
+}
+/*没有设置高度  高度是由padding的值撑开的 所有改变宽高 要设置padding值  选择覆盖样式  提高优先级即可*/
+.wjs-navBar .navbar-nav > li > a {
+	padding: 30px 15px;
+}
+/*active  选中的样式  focus获取焦点的样式 不需要 去掉
+ 两个类名之间有空格 是下一级  没有空格是既有这个类名 也有这个类名 才会生效
+ */
+.wjs-navBar.navbar-default .navbar-nav>.active>a,
+/*.navbar-default .navbar-nav>.active>a:focus,*/
+.wjs-navBar.navbar-default .navbar-nav>.active>a:hover,
+.wjs-navBar.navbar-default .navbar-nav>li>a:hover  {
+	background: none;
+	border-bottom: 3px solid #E92322;
+}
+
+.wjs-navBar .wjs_icon_logo {
+	 font-size: 50px;
+	 color: #E92322;
+}
+
+.wjs-navBar .wjs_icon_word {
+	font-size: 36px;
+	color: #333;
+}
+.wjs-navBar .navbar-brand {
+	height: 83px;
+	line-height: 83px;
+	padding: 0;
+	margin-right: 10px;
+}
+.wjs-navBar .navbar-brand .wjs_icon {
+	vertical-align: middle;
+}
+
+.banner .carousel-inner>.item {
+	height: 410px;
+	background-position: center top;
+}
+.paySafe {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.paySafe .media {
+	display: block;
+	margin-bottom: 30px;
+}
+.paySafe .media .wjs_icon {
+	font-size: 30px;
+}
+.paySafe .inner {
+	width: 75%;
+	margin: 0 auto;
+}
+.order {
+    padding: 25px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.order .wjs_icon {
+    font-size: 24px;
+}
+
+.order .order-btn {
+    color: #E92322;
+    border-bottom: 1px dashed #E92322;
+}
+
+.order .video:hover {
+    color: #E92322;
+}
+.product {
+	background: #F5F5F5;
+	padding: 30px 0;
+}
+.product .nav-tabs>li.active>a,
+.product .nav-tabs>li.active>a:focus,
+.product .nav-tabs>li.active>a:hover{
+    background: none;
+    border: 1px solid transparent;
+    border-bottom: 3px solid #e92322;
+}
+.product .nav-tabs>li>a:hover {
+    background: none;
+    border: 1px solid transparent;
+}
+.product .items {
+	margin-top: 25px;
+}
+.product-box {
+	display: block;
+	background: #FFFFFF;
+	height: 150px;
+	 box-shadow: 2px 2px 2px #d8d8d8;  /* 第一个和第二个是偏移   第三个是半径  最后一个是元素*/
+}
+.product .left {
+	height: 150px;
+	/*background: green;*/
+	overflow: hidden; /* 或者设置margin-right*/
+}
+.product .right {
+	width: 107px;
+	height: 150px;
+	/*background: red;*/
+}
+.product-box .left {
+    height: 150px;
+    overflow: hidden;
+}
+
+.product-box .left h4 {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.product-box .left p {
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
+.product-box .left .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.product-box .left .row > div {
+    margin-bottom: 4px;
+}
+
+.product-box .right {
+    width: 107px;
+    height: 150px;
+    border-left: 1px dashed #ccc;
+    position: relative;
+}
+
+.product-box .right::before,
+.product-box .right::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    background: #f5f5f5;
+    border-radius: 50%;
+}
+.product-box .right::before {
+    top: -6px;
+    box-shadow: 0 -2px 2px #d8d8d8 inset;
+}
+
+.product-box .right::after {
+    bottom: -6px;
+    box-shadow: 0 2px 2px #d8d8d8 inset; /*inset 就是border框内嵌效果*/
+}
+.product-box .percent {
+    padding-top: 25px;
+}
+
+.product-box .percent span {
+    font-size: 44px;
+    color: #E92322;
+    font-weight: bold;
+}
+
+.product-box .percent  i {
+    font-size: 12px;
+    margin-left: -4px;
+    font-style: normal;
+}
+.product-box .progress {
+    height: 15px;
+}
+
+.product-box .toolTip {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+}
+
+.product-box .toolTip .bao,
+.product-box .toolTip .bei {
+    width: 16px;
+    height: 16px;
+    line-height: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.product-box .toolTip .bao {
+    border: 1px solid red;
+    color: red;
+}
+
+.product-box .toolTip .bei {
+    border: 1px solid green;
+    color: green;
+}
+.product-box.active {
+    background: #e92322;
+    color: #FFF;
+    position: relative;
+}
+
+.product-box.active .percent span {
+    color: #FFF;
+}
+
+.product-box.active::before {
+    font-family: 'wjs';
+    content: "\e915";
+    font-size: 33px;
+    position: absolute;
+    left: 0;
+    top: -7px;
+}
+.news {
+    padding: 30px 0;
+    background: #FFFFFF;
+    margin-top: 30px;
+}
+
+.news .title {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.news .title::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    right: -6px;
+    bottom: -3px;
+}
+
+.news .nav-tabs>li.active>a,
+.news .nav-tabs>li.active>a:focus,
+.news .nav-tabs>li.active>a:hover {
+    border: 1px solid transparent;
+    background: #e92322;
+}
+
+.news .nav-tabs>li>a:hover {
+    background: #e92322;
+    border: 1px solid transparent;
+}
+
+.news .nav-tabs {
+    border-bottom: none;
+    /*z-index: 10;*/
+}
+
+.news .nav-tabs>li>a {
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-bottom: 60px;
+    padding: 0;
+    text-align: center;
+    line-height: 60px;
+}
+
+.news .nav-tabs>li:last-child a {
+    margin-bottom: 0;
+}
+
+.news .wjs_icon {
+    font-size: 30px;
+    color: #FFF;
+}
+
+.news .line {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border-right: 1px dashed #ccc;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+    margin-left: -3px;
+}
+
+.newsList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.newsList li {
+    margin-bottom: 25px;
+}
+.partner {
+    background: #f5f5f5;
+    padding: 30px 0;
+}
+
+.partner h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.partner .cooper {
+    padding-top: 10px;
+}
+
+.partner .wjs_icon {
+    font-size: 60px;
+    margin: 0 5px;
+}
+@media screen and (max-width: 992px) {
+    .news .nav-tabs>li {
+        width: 25%;
+    }
+    .news .nav-tabs>li>a {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width : 768px) {
+	.wjs-navBar .navbar-toggle{
+		margin-top: 26px;
+	}
+	 .wjs-navBar .navbar-brand {
+        margin-left: 10px;
+    }
+    .banner .carousel-inner>.item {
+        height: auto;
+    }
+    .banner .carousel-inner>.item img {
+        width: 100%;
+    }
+    .product .nav-tabs {
+    	width: 100%;
+    	overflow-x: auto;
+    	-webkit-overflow-scrolling: touch;
+    	/* 强制文字不换行 对inline元素和inline-block元素起作用*/
+    	white-space: nowrap;
+    	height: 76px;    
+    }
+    .product .nav-tabs li {
+        display: inline-block;
+        float: none;
+    }
+    .tab-content .newsList li {
+    	margin-left: 20px;
+    }
+
+}
